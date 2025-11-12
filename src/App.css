@@ -1,0 +1,57 @@
+#logo{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+
+}
+#objectiveList{
+    display: flex;
+    margin-left: 12.5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.objList{
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#Quote{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1{
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+p{
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 20px;
+    margin-left:20%;
+    margin-right: 20%;
+}
+h2{
+    text-align: center;
+}
+
+body{
+    background-color:#03045e;
+    color: #d1d4df;
+    font-family: "Berlin Sans FB";
+}
+h3{
+    text-align: center;
+}
+
+#finalDescription{
+    margin-bottom: 8.5%;
+}

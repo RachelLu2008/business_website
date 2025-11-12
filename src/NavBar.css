@@ -1,0 +1,27 @@
+#nav{
+    background-color:#023e8a;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin-bottom:50px;
+    color:white;
+}
+
+.navButton{
+    background-color:#023e8a;
+    border-color: transparent;
+    padding: 10px;
+    color:white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.navButton:hover{
+    background-color: #0096c7;
+}
+
+#screen {
+    margin-top: 80px;
+}
