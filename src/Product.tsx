@@ -14,7 +14,7 @@ function Product(){
             return [];
         }
     }
-    function addToCart(item:string) {
+    function addToCart(item: string) {
         const arr = getProducts();
         arr.push(item);
         localStorage.setItem("product", JSON.stringify(arr));
@@ -31,14 +31,14 @@ function Product(){
                 <div id={"product1"}>
                     <img id="ExploreKitImage" src={logo} height="350" width="250" alt={"Kit"}></img>
                     <p>StellarHorizon Orbit+ Companion</p>
-                    <p>$179</p>
+                    <p>$59.99</p>
                         <button className={"add"} onClick={()=>addToCart("StellarHorizon Orbit+Companion")}>Add To Cart</button>
                 </div>
 
                 <div id={"product2"}>
                     <img id="OrbitImage" src={logo1} height="350" width="250" alt={"orbit"}></img>
                     <p>StellarHorizon Explorer Kit</p>
-                    <p>$59</p>
+                    <p>$59.99</p>
                         <button className={"add"} onClick={()=>addToCart("StellarHorizon Explorer Kit")}>Add To Cart</button>
                 </div>
             </div>
