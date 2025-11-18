@@ -42,7 +42,7 @@ function Cart() {
                     <div id={"list"} key={index}>
                         <span>{item}</span>
                         <p>$59.99</p>
-                        <button onClick={()=>Delete()}>Delete</button>
+                        <button onClick={()=>clear()}>Delete</button>
 
                     </div>
                 )}
