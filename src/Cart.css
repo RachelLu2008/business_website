@@ -5,6 +5,44 @@
 }
 
 #list{
-    text-align: center;
     font-size: 25px;
+    display: flex;
+    border: #0096c7 1px solid;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.dandC{
+    background-color:#023e8a;
+    border-color: transparent;
+    padding: 10px;
+    color:white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.dandC:hover{
+    background-color: #0096c7;
+}
+
+#cartList{
+   margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+
+#clear{
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+
+#deleteBut{
+    margin-top: 25%;
+    margin-bottom: auto;
+}
+
+#item{
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
 }

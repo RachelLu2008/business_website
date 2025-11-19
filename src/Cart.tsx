@@ -12,10 +12,15 @@ function Cart() {
         setItems([])
     }
 
-    function Delete(key: string){
-
-        localStorage.removeItem(key)
-        setItems([key])
+    function Delete(index: number){
+        const newItems = [];
+        for(let i = 0; i < items.length; i++){
+            if(i !== index){
+                newItems.push(items[i]);
+            }
+        }
+        setItems(newItems)
+        localStorage.setItem("product", JSON.stringify(newItems));
     }
 
     function getTotal(){
@@ -37,19 +42,22 @@ function Cart() {
     return (
         <>
             <div id = "cartTitle"><h1>Cart</h1></div>
-            <div>
+            <div id ={"cartList"}>
                 {items.map((item, index) =>
                     <div id={"list"} key={index}>
-                        <span>{item}</span>
-                        <p>$59.99</p>
-                        <button onClick={()=>clear()}>Delete</button>
-
+                            <span id ={"item"}>{item}</span>
+                            <p>$59.99</p>
+                            <div id={"deleteDiv"}>
+                                <button className={"dandC"} id={"deleteBut"} onClick={() => Delete(index)}>Clear</button>
+                            </div>
                     </div>
                 )}
             </div>
-            <div><button onClick={()=>clear()}>Clear</button></div>
             <div>
-                <h1>
+                <button className={"dandC"} id={"clear"} onClick={() => clear()}>Clear</button>
+            </div>
+            <div>
+            <h1>
                     Total: ${getTotal()}
                 </h1>
             </div>
