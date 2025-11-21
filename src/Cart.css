@@ -7,9 +7,12 @@
 #list{
     font-size: 25px;
     display: flex;
+    justify-content: space-between;
     border: #0096c7 1px solid;
     margin-bottom: 20px;
     border-radius: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .dandC{
     background-color:#023e8a;
@@ -42,7 +45,7 @@
 }
 
 #item{
-    margin-left: 5%;
     margin-top: auto;
     margin-bottom: auto;
+    width: 200px;
 }

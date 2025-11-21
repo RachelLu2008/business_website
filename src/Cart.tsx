@@ -48,7 +48,7 @@ function Cart() {
                             <span id ={"item"}>{item}</span>
                             <p>$59.99</p>
                             <div id={"deleteDiv"}>
-                                <button className={"dandC"} id={"deleteBut"} onClick={() => Delete(index)}>Clear</button>
+                                <button className={"dandC"} id={"deleteBut"} onClick={() => Delete(index)}>Delete</button>
                             </div>
                     </div>
                 )}
